@@ -6,5 +6,5 @@ use App\Traits\ResponseApiTrait;
 
 abstract class Controller
 {
-    use ResponseApiTrait;
+    use ResponseApiTrait; 
 }
