@@ -1,10 +1,10 @@
 ## Lista de servicios
 ### Usuarios
 - [x] registrar usuarios
-- [] iniciar sesión
-- [] cerrar sesión(autenticado)
-- [] editar perfil(autenticado, solo puede modificar su propio perfil)
-- [] recuperar contraseña(correo electrónico)
+- [ ] iniciar sesión
+- [ ] cerrar sesión(autenticado)
+- [ ] editar perfil(autenticado, solo puede modificar su propio perfil)
+- [ ] recuperar contraseña(correo electrónico)
 
 ### Posts
 - Crear
