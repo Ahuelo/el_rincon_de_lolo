@@ -10,4 +10,10 @@ trait ResponseApiTrait{
         ], $code);
     }
 
+    public function errorResponse(string $message, int $code= 400){
+        return response()->json([
+            'message'=>$message
+        ], $code);
+    }
+
 }
