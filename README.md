@@ -1,8 +1,9 @@
 ## Lista de servicios
 ### Usuarios
 - [x] registrar usuarios
-- [ ] iniciar sesión
+- [x] iniciar sesión
 - [ ] cerrar sesión(autenticado)
+- [ ] validar correo
 - [ ] editar perfil(autenticado, solo puede modificar su propio perfil)
 - [ ] recuperar contraseña(correo electrónico)
 
