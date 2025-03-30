@@ -8,3 +8,5 @@ use Illuminate\Support\Facades\Route;
 Route::post('/user', [UserController::class,'store']);
 
 Route::post('/login', [AuthenticableController::class,'login']);
+
+Route::middleware("auth:sanctum")->post('/logout', [AuthenticableController::class, 'logout']);
