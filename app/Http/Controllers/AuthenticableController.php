@@ -15,4 +15,11 @@ class AuthenticableController extends Controller
         }
         return $this->errorResponse("No se pudo iniciar sesión");
     }
+
+    public function logout (Request $request)
+    {
+        $user = Auth::user();
+        $user->tokens()->delete();
+        return $this->successResponse(null, "Se ha cerrado exitosamente la sesión");
+    }
 }
