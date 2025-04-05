@@ -41,7 +41,12 @@ class LogoutTest extends TestCase
             [
                 'message',
                 'data'
-            ]);        
+            ]);  
+            $response->assertExactJson(
+                [
+                    'message' => 'Se ha cerrado exitosamente la sesión',
+                    'data' => null
+                ]);     
     }
 
     public function test_logout_sin_token()
