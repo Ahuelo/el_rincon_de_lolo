@@ -40,19 +40,18 @@ class LogoutTest extends TestCase
         $response->assertJsonStructure(
             [
                 'message',
-                //'data' => null
+                'data'
             ]);        
     }
 
     public function test_logout_sin_token()
     {
-        $response = $this->post('/api/logout');
-        $response->assertStatus( Response::HTTP_UNAUTHORIZED);
-        //dd($response);
+        $response = $this->post('/api/logout', [], ["Accept" => "application/json"]);
+        $response->assertStatus(Response::HTTP_UNAUTHORIZED);
         $response->assertJsonStructure(
             [
-                'message'
-                //'data' => null
+                'message',
+                //'data'
             ]);
     }
 }
